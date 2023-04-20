@@ -24,3 +24,19 @@ apis.then((apiData) => {
     console.log(data);
   });
 });
+
+// Promisfy
+function arraySum(array, cb) {
+  var sum = array.reduce((p, c) => p + c);
+  cb(sum);
+}
+
+function promisfy(array) {
+  return new Promise((resolve, reject) => {
+    arraySum(array, (sum) => resolve(sum));
+  });
+}
+
+array = [1, 2, 3];
+
+promisfy(array).then((data) => console.log(data));
