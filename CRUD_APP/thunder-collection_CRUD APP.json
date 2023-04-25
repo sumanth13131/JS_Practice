@@ -1,0 +1,97 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CRUD APP",
+    "dateExported": "2023-04-25T05:51:22.480Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f03f9f65-ea8a-43fb-b59c-37d72192e41e",
+            "colId": "38937bd0-2eb8-4a76-805e-550814d43455",
+            "containerId": "",
+            "name": "addUser",
+            "url": "localhost:8080/addUser",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-25T05:44:17.625Z",
+            "modified": "2023-04-25T05:49:49.892Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"temp8\",\n  \"email\": \"temp8@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2a22432b-6a10-448c-9f8b-672492a4c9a2",
+            "colId": "38937bd0-2eb8-4a76-805e-550814d43455",
+            "containerId": "",
+            "name": "getUserData",
+            "url": "localhost:8080/getUserData",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-25T05:46:45.950Z",
+            "modified": "2023-04-25T05:46:45.950Z",
+            "headers": [
+                {
+                    "name": "id",
+                    "value": "6"
+                }
+            ]
+        },
+        {
+            "_id": "938a548d-ecb4-4278-b22f-bf4daa265921",
+            "colId": "38937bd0-2eb8-4a76-805e-550814d43455",
+            "containerId": "",
+            "name": "updateUser",
+            "url": "localhost:8080/updateUser",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-25T05:47:28.522Z",
+            "modified": "2023-04-25T05:50:26.547Z",
+            "headers": [
+                {
+                    "name": "id",
+                    "value": "6"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"temp06\",\n  \"email\": \"temp06@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "603c8d97-687e-4f80-b1ea-53f495b742ff",
+            "colId": "38937bd0-2eb8-4a76-805e-550814d43455",
+            "containerId": "",
+            "name": "deleteUser",
+            "url": "localhost:8080/deleteUser",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-04-25T05:48:01.029Z",
+            "modified": "2023-04-25T05:50:57.924Z",
+            "headers": [
+                {
+                    "name": "id",
+                    "value": "6"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
